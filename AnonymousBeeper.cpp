@@ -15,13 +15,13 @@ int main()
 	};
 	auto b = [=](int x, int y)
 	{
-		cout << "\n\079\tBEEP \bBOOP\a\007\t\rBEEPBOOP\007\008\069\n" << endl;
+		cout << "\b\e\e\b\bB\bE\bE\bP\b \bB\bE\bE\bP\b\n\079\tBEEP \bBOOP\007\t\rBEEPBOOP\007\008\069\n" << endl;
 		return x + y + z;
 	};
 	auto c = [&](int x, int y)
 	{
 		q = z;
-		cout << "\n\079\tBEEP \bBOOP\a\007\t\rBEEPBOOP\007\008\069\n" << endl;
+		cout << "\b\b\n\079\tBEEP \bBOOP\e\007\t\rBEEPBOOP\007\008\069\n" << endl;
 		return x + y + z;
 	};
 
